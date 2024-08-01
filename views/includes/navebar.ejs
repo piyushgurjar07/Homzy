@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/navebar.css">
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/listings" style="margin-left: 20px;">
+      <img src="/images/logos.png" alt="Image does not exist" height="60px" >
+    </a>
+      
+      <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNavAltMarkup">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+          <div class="navbar-nav ms-auto ">
+              <div class="d-flex" role="search">
+                  <input class="form-control me-2 search-inp" id="myInput" type="search" placeholder="Search destinations">
+                  <button class="btn search-btn" id="mySearch"> <i class="fa-solid fa-magnifying-glass"></i>Search</button>
+              </div>
+          </div>
+
+          <div class="navbar-nav ms-auto ">
+            <div class="add">
+              <a class="nav-link " style="padding-right: 20px;" href="/listings/new">
+                <div><i class="fa-solid fa-house"></i></div>
+                <div>Add your property</div>
+              </a>
+            </div>
+    
+              <div class="dropdown" style="display: flex; align-items: center;">
+                <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <% if(!currUser){ %>
+                        <li><a class="dropdown-item" href="/signup"><b>Sign up</b></a></li>
+                        <li><a class="dropdown-item" href="/login"><b>Log in</b></a></li>
+                    <% } else{ %>
+                        <li><a class="dropdown-item" href="/logout"><b>Log out</b></a></li>
+                    <% } %>
+                </ul>
+            </div>
+            
+            
+          </div>
+
+      </div>
+  </div>
+</nav>
+<script src="/js/script.js"></script>

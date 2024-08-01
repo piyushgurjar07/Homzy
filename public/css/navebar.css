@@ -1,0 +1,49 @@
+.search-btn{
+    background-color: #fe424d;
+    color: white;
+    border-radius: 25px;
+    padding: 0 1rem ;
+}
+.search-btn:hover{
+    background-color: #fe424d;
+    color: white;
+}
+.search-btn i{
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.search-inp{
+    border-radius: 25px;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+}
+#myInput{
+  border-color: black;
+}
+.dark-mode #myInput{
+  border-color: rgb(255, 255, 255);
+}
+
+#dropdownMenuButton{
+  border-radius: 50px; font-size: large; color: black; background-color: aliceblue;
+}
+
+#dropdownMenuButton:hover{
+  background-color: rgb(180, 203, 224);
+}
+
+.add{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.7;
+  align-items: center;
+  text-align: center;
+}
+
+.add:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+    
